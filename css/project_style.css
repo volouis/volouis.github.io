@@ -1,0 +1,33 @@
+.content-wrap{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+.Relevant-Projects {
+  background: #e71d36;
+}
+.companyname {
+  text-transform: uppercase;
+}
+h3 ~ p{
+  margin: 0;
+}
+.companyname, .date{
+  /* display: inline-block; */
+}
+.date {
+  text-align: right;
+}
+
+/*************** education  */
+.Skills {
+  background: #ff9f1c;
+
+  /* background picture */
+  /* background: linear-gradient(rgba(144,1,1,0.8)),
+    url(../Images/UofT.jpg) no-repeat fixed;
+  background-size: cover; */
+}
