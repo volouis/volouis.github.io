@@ -1,10 +1,30 @@
+/* Global */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .content-wrap{
   max-width: 700px;
   margin: 0 auto;
   padding: 10px;
 }
 
+/* header */
+.header {
+  background: #2ec4b6;
+  color: #011627;
+}
 
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+/* Relevant project */
 
 .Relevant-Projects {
   background: #e71d36;
@@ -22,12 +42,20 @@ h3 ~ p{
   text-align: right;
 }
 
-/*************** education  */
+/*************** Skills  */
 .Skills {
   background: #ff9f1c;
+  height: 295px;
+  margin: 0 auto;
 
   /* background picture */
   /* background: linear-gradient(rgba(144,1,1,0.8)),
     url(../Images/UofT.jpg) no-repeat fixed;
   background-size: cover; */
+}
+
+.box {
+  margin: 0 auto;
+  float: left;
+  padding-left: 35px;
 }
