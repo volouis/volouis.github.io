@@ -3,15 +3,21 @@
 <head>
   <title>Projects</title>
   <link rel="stylesheet" href="css/project_style.css">
-
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik|Yanone+Kaffeesatz" rel="stylesheet">
   <!-- this -->
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <div id="header"></div>
   <div id="content">
   <header>
+    <nav role="navigation">
+      <a href="#about">About</a>
+      <a href="project.html">Project</a>
+      <a href="resume.pdf" download>Resume</a>
+    </nav>
     <div class="content-wrap">
       <h1>Louis Vo</h1>
       <h2>Projects</h2>
@@ -101,16 +107,20 @@
       </div>
     </section>
   </main>
+  
+  <footer id="contact">
+    <div class="content-wrap">
+      <h2>Let's Keep in Touch!</h2>
 
-  <div id="footer"></div>
+      <!-- Social media and contact links. Add or remove any networks. -->
+      <div class="contact-info" role="contentinfo">
+          <a href="mailto:louisqvo@gmail.com"><i class="fas fa-envelope-square"></i> louisqvo@gmail.com</a>
+          <a href="https://github.com/volouis" target="_blank"><i class="fab fa-github-square"></i> github.com/volouis</a>
+          <a href="https://www.linkedin.com/in/louis-vo-3a3243101/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
 
-
-  <!---              Calling the header and footer html file     --------->
-
+      <p>Copyright 2017 by Louis Vo</p>
+    </div>
+  </footer>
 </body>
-<script>
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-</script>
-
-</html
