@@ -1,0 +1,74 @@
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background: #ffe8d4;
+}
+nav a {
+display: inline-block;
+padding: 10px 20px;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 25px;
+font-weight: 1000;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+
+h1,h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    color: #fdfffc;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.content-wrap{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header, footer {
+    background: #2ec4b6;
+    color: #011627;
+}
+  
+header {
+text-align: center;
+}
+header p {
+text-align: left;
+}
+footer {
+    text-align: center;
+}
+.contact-info a {
+margin: 10px;
+font-size: 20px;
+color: #fdfffc;
+}
+
+.table{
+    margin: 0;
+    max-width: 700px; 
+    margin: auto;
+}
+
+#applications{
+    background: #ff9f1c;
+}
+
+.appImg{
+    height: 200px;
+    width: 300px;
+}
