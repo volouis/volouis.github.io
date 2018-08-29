@@ -3,116 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Louis Vo's Profile</title>
-    <!--calling Javascript file-->
-    <script src="script.js"></script>
-    <!--calling css file-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--  font awesome icon-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Yanone+Kaffeesatz" rel="stylesheet">
-    <!-- // Intro -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
-
-<body>
-    <header id="about" role="banner">
-      <nav role="navigation">
-        <a href="index.html">Main</a>
-        <a href="project.html">Project</a>
-        <a href="Applications.html">Applications</a>
-        <a href="resume.pdf" download>Resume</a>
-      </nav>
-
-      <div class="content-wrap">
-        <img class="profile-pic"src="images/profile.png" alt="Your Name">
-        <h1>Louis Vo</h1>
-        <h2>Profile</h2>
-        <p>I recently graduated from University of Toronto and I am currently looking
-        for a job oppurtunity in the field of programming and developing application.
-        my previous work experience help me gaining business knowlegde of how companies
-        work but never help me in gaining knowlegde in programming. That's where going
-        school help me learn more about developing applications that can help people in
-        working enviroments.</p>
-      </div>
-    </header>
-
-    <main id="work" role="main">
-        <!-- // Work Experience -->
-        <section class="work">
-          <div class="content-wrap">
-            <h2>Work Experience</h2>
-
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Sales Analyst</h3>
-            <p class="companyname">IBM Canada</p>
-            <p class="date">September 2015 – August 2016</p>
-
-            <ul>
-                <li>Help connect startups with IBM Cloud platform technology to rapidly scale,
-                  build, and deploy their inventions by building new partnerships with University’s incubators</li>
-                <li>Understanding client needs by offering them IBM’s products that brings value to their company</li>
-                <li>Designed presentation demos using multiple programming languages and API’s on a cloud platform</li>
-            </ul>
-
-            <h3>Business Analyst</h3>
-            <p class="companyname">Canada Herb</p>
-            <p class="date">May 2014 – August 2014</p>
-
-            <!-- Add as many paragraphs as you need. -->
-            <ul>
-                <li>Designed a new database structure to organize the flow of all 42 Canada Herb food products,
-                  including invoicing for 124 customers and import information from suppliers in Thailand, China and Vietnam</li>
-                <li>Facilitated the reduction of database structure to a more concise form by 90%</li>
-                <li>Generated forecasting models to predict the future customer demands with 91% accuracy</li>
-            </ul>
-
-            <h3>Property Management</h3>
-            <p class="companyname">Chieu Ha's Real Estate</p>
-            <p class="date">August 2014 – Present</p>
-
-            <!-- Add as many paragraphs as you need. -->
-            <ul>
-                <li>Organized 23 open house and private viewings of the apartments for over 300 potential tenants</li>
-                <li>Negotiated the terms of the contract with the tenants to finalize the deal for 6 apartments</li>
-                <li>Performed background checks on tenants by analyzing their credit records and personal statements</li>
-            </ul>
-            <!-- end of Job Details block. -->
-          </div>
-        </section>
-
-
-        <!-- // Education -->
-        <section id="education" class="education">
-          <div class="content-wrap">
-            <h2>Education</h2>
-
-            <!-- School details: copy this whole block to add more schools. -->
-            <h3>University of Toronto, 2011 - 2017</h3>
-            <p>Bachelors in Applied Science, Industrial Engineer</p>
-
-            <!-- Add as many paragraphs as you need. -->
-            <p>Summary.</p>
-            <!-- End of school details. -->
-          </div>
-        </section>
-    </main>
-
-    <!-- // Footer & contact info -->
-    <footer id="contact">
-      <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
-
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <div class="contact-info" role="contentinfo">
-            <a href="mailto:louisqvo@gmail.com"><i class="fas fa-envelope-square"></i> louisqvo@gmail.com</a>
-            <a href="https://github.com/volouis" target="_blank"><i class="fab fa-github-square"></i> github.com/volouis</a>
-            <a href="https://www.linkedin.com/in/louis-vo-3a3243101/" target="_blank">
-              <i class="fab fa-linkedin"></i> LinkedIn</a>
+    <body>
+        <div id="identity">
+            <div class="idenCont">
+                <img class="profile-pic" src="img/profile.png" alt="">
+                <h1>Louis Vo</h1>
+                <h2 class="job">Front End</h2>
+                <button class="downRes">
+                    <a class="res" href="LouisVo_Resume.pdf" download>DOWNLOAD RESUME</a>
+                </button>
+                <!-- <p>louisqvo@gmail.com</p>
+                <p>louisqvo</p>
+                <p>(647)-284-4803</p> -->
+            </div>
         </div>
 
-        <p>Copyright 2017 by Louis Vo</p>
-      </div>
-    </footer>
-</body>
+        <div id="skillSets">
+            <div class="subject">
+                <h2 class="subTitle">About Me</h2>
+                <hr>
+                <p class="description">
+                    I recently graduated from University of Toronto and I am currently looking
+                    for a job oppurtunity in the field of programming and developing application.
+                    my previous work experience help me gaining business knowlegde of how companies
+                    work but never help me in gaining knowlegde in programming. That's where going
+                    school help me learn more about developing applications that can help people in
+                    working enviroments.
+                </p>
+                <hr>
+                <p style="text-align: center"><b>Email: </b>louisqvo@gmail.com</p>
+                <p style="text-align: center"><b>Skype: </b>louisqvo</p>
+                <p style="text-align: center"><b>Phone: </b>(647)-284-4803</p>
+                <hr>
+            </div>
+
+            <div class="subject">
+                <h2 class="subTitle">Work Experience</h2>
+                <hr>
+                <div>
+                    <p><b>Data Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2017 - MAr 2018</span></p>
+                    <p class="description">
+                        Designed and Analyzed databases using MySQL to reduce cost and increase profit and 
+                        generated forecasting models to predict the future customer demands with VBA
+
+                    </p>
+                </div>
+                <div>
+                    <p><b>Sales Analyst / IBM Canada</b>  <span class="badge badge-pill badge-dark">Sept 2015 - Aug 2016</span></p>
+                    <p class="description">
+                        Designed application demos using IBM’s cloud platform with JQuery, HTML, 
+                        CSS and IBM’s API offerings on the cloud
+                    </p>
+                </div>
+                <div>
+                    <p><b>Business Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2014 - Aug 2014</span></p>
+                    <p class="description">
+                        Simplified unstructured database to a new concise structure form using Microsoft Excel
+                    </p>
+                </div>
+            </div>
+            
+            <div class="subject">
+                <h2 class="subTitle">Skills</h2>
+                <hr>
+            </div>
+            
+            <div class="subject">
+                <h2 class="subTitle">Education</h2>
+                <hr>
+                <p>
+                    <b>Industrial Engineer / University of Toronto</b> 
+                    <span class="badge badge-pill badge-dark">2011 - 2017</span>
+                </p>
+
+                <p class="description">
+                    Learned about different forms of a company to recognize the areas that needs improvement,
+                    and one of the the main ways they taught was to utilized different softwares and programming languages 
+                    to optimize data structure for a better understanding on how to lower costs and increase profits.
+                </p>
+            </div>
+            
+            <div class="subject">
+                <h2 class="subTitle">Projects</h2>
+                <hr>
+
+                <div class="projects">
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="1">
+                                <img class="proImg pro1" src="img/Psychic.png" alt="...">
+                                <div class="proName name1">
+                                    <h2 class="proWord">Psychic</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="2">
+                                <img class="proImg pro2" src="img/HangMan.png" alt="...">
+                                <div class="proName name2">
+                                    <h2 class="proWord">HangMan</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="3">
+                                <img class="proImg pro3" src="img/Crystal.png" alt="...">
+                                <div class="proName name3">
+                                    <h2 class="proWord">Crystal</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="4">
+                                <img class="proImg pro4" src="img/Trivia.png" alt="...">
+                                <div class="proName name4">
+                                    <h2 class="proWord">Trivia</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="5">
+                                <img class="proImg pro5" src="img/Giphy.png" alt="...">
+                                <div class="proName name5">
+                                    <h2 class="proWord">Giphy</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="6">
+                                <img class="proImg pro6" src="img/TrainSchedule.png" alt="...">
+                                <div class="proName name6">
+                                    <h2 class="proWord">Train Schedule</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="7">
+                                <img class="proImg pro7" src="img/TwoPlayerRPS.png" alt="...">
+                                <div class="proName name7">
+                                    <h2 class="proWord">TwoPlayerRPS</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="8">
+                                <img class="proImg pro8" src="img/RoundMe.png" alt="...">
+                                <div class="proName name8">
+                                    <h2 class="proWord">RoundMe</h2>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="4">
+                                <img class="proImg pro4" src="img/StarWars.png" alt="...">
+                                <div class="proName name4">
+                                    <h2 class="proWord">StarWars</h2>
+                                    <hr>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj"> 
+                        <a href="">
+                            <div class="projImg" data-val="4">
+                                <img class="proImg pro4" src="img/StarWars.png" alt="...">
+                                <div class="proName name4">
+                                    <h2 class="proWord">StarWars</h2>
+                                    <hr>
+                                    <h5 class="proWord">View Detail</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                   
+                </div>
+
+            </div>
+            
+            <div class="subject">
+                <h2 class="subTitle">Contact Info</h2>
+                <hr>
+                <p style="text-align: center"><b>Email: </b>louisqvo@gmail.com</p>
+                <p style="text-align: center"><b>Skype: </b>louisqvo</p>
+                <p style="text-align: center"><b>Phone: </b>(647)-284-4803</p>
+                <!-- <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <td><b>Email: </b>louisqvo@gmail.com</td>
+                        <td><b>Skype: </b>louisqvo</td>
+                      </tr>
+                      <tr>
+                        <td><b>Phone: </b>(647)-284-4803</td>
+                      </tr>
+                    </tbody>
+                </table> -->
+            </div>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+    
 </html>

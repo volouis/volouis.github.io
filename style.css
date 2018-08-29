@@ -1,0 +1,124 @@
+body{
+    font-family: 'Raleway:thin', sans-serif;
+    margin: 0;
+}
+
+#identity{
+    background-color: #dbdbdb;
+    float: left;
+    width: 30%;
+}
+
+.profile-pic {
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h5{
+    margin: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.job{
+    font-weight: 300;
+}
+
+#skillSets{
+    float: left;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.subTitle{
+    margin-top: 30px;
+    font-family: 'Raleway:b', sans-serif;
+    color: rgb(20, 156, 156);
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.753);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+    width: 90%;
+    align-content: center;
+    align-items: center;
+}
+
+p{
+    width: 90%;
+    margin: auto;
+    color: black;
+}
+
+.description{
+    font-weight: 100;
+}
+
+tr{
+    width: 90%;
+    margin: auto;
+}
+
+.downRes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 200px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+}
+
+.res{
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.projects{
+    width: 90%;
+    margin: auto;
+}
+
+.subject{
+    overflow: auto;
+}
+
+.projImg{
+    overflow: hidden;
+    width: 45%;
+    margin: 0;
+    border: 0;
+    float: left;
+}
+
+.proName{
+    z-index: 201;
+    top: 50%;
+    transform: translateY(-150%);
+}
+
+.proName * {
+    margin: 0;
+}
+
+.proWord{
+    /* width: 50%; */
+    font-size: 150%;
+}
