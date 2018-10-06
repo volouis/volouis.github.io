@@ -153,6 +153,7 @@ img{
   
   .card > .content > ul {
     list-style-type: none;
+    padding: 0;
   }
   
   .card > .content > ul > li {
