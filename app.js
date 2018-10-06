@@ -23,7 +23,7 @@ var projects = {
     ],
     img: [
         "Bamazon", "Budget", "Burger","Crystal", "FriendFinder", "Giphy",
-    "Hangman", "Liri", "node_wordGuess", "Psychic", "RoundMe", "StarWars",
+    "HangMan", "Liri", "node_wordGuess", "Psychic", "RoundMe", "StarWars",
     "TrainSchedule", "Trivia", "TwoPlayerRPS","TorontoStarSport"
 ],
     applications: [
