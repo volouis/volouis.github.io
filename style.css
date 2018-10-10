@@ -188,7 +188,7 @@ img{
   .skillproper{
     width: 80%;
     margin: auto;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
   }
 
   .percentSkill{
@@ -210,6 +210,10 @@ img{
     border-width: 1px;
     margin: 10px;
     padding: 5px;
+}
+
+.skillTable{
+    margin: auto;
 }
 
 .sideSkill{
