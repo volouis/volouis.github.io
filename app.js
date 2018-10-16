@@ -2,7 +2,7 @@ var projects = {
     name: [
         "Bamazon", "Budget Tracker", "Burger App","Crystal Game", "Friend Finder", "Giphy",
         "Hangman", "Liri", "Node Word Guess", "Psychic", "Round Me", "Star Wars RPG",
-        "Train Schedule", "Comic Trivia", "Two Player RPS", "Toronto Star Sports"
+        "Train Schedule", "Comic Trivia", "Two Player RPS", "Toronto Star Sports", "Memory Game"
     ],
     website: ["https://volouis.github.io/bamazon/",
         "https://cryptic-badlands-31521.herokuapp.com/",
@@ -19,12 +19,13 @@ var projects = {
         "https://volouis.github.io/TriviaGame/",
         "https://volouis.github.io/RPSTwoPlayers/",
         "https://volouis.github.io/RPSTwoPlayers/",
-        "https://github.com/volouis/mongoCheerio"
+        "https://calm-sands-17783.herokuapp.com/",
+        "https://volouis.github.io/memoryReact/"
     ],
     img: [
         "Bamazon", "Budget", "Burger","Crystal", "FriendFinder", "Giphy",
     "HangMan", "Liri", "node_wordGuess", "Psychic", "RoundMe", "StarWars",
-    "TrainSchedule", "Trivia", "TwoPlayerRPS","TorontoStarSport"
+    "TrainSchedule", "Trivia", "TwoPlayerRPS", "TorontoStarSport", "MemoryGame"
 ],
     applications: [
         "Javascript, Node.js",
@@ -42,7 +43,8 @@ var projects = {
         "Bootstrap, CSS, Firebase, HTML, Javascript, JQuery",
         "Bootstrap, CSS, HTML, Javascript, JQuery",
         "CSS, Firebase, HTML, Javascript, JQuery",
-        "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js"
+        "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js",
+        "Bootstrap, CSS, HTML, JavaScript, React"
     ]
 
 }
