@@ -1,2 +1,2 @@
-# This is my online profile
-## Click volouis.github.io to view my Profile
+# Louis Vo's Profile
+click [here](volouis.github.io) to view my profile page
