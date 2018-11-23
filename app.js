@@ -1,12 +1,13 @@
 var projects = {
     name: [
-        "Memory Game", "Toronto Star Sports", "Round Me", "Budget Tracker", "Burger App","Crystal Game", 
+        "Memory Game", "Toronto Star Sports", "New York Time Scrapper","Round Me", "Budget Tracker", "Burger App","Crystal Game", 
         "Friend Finder", "Giphy", "Hangman", "Liri", "Node Word Guess", "Psychic", "Star Wars RPG",
         "Train Schedule", "Comic Trivia", "Two Player RPS", "Bamazon",
     ],
     website: [
         "https://volouis.github.io/memoryReact/",
         "https://calm-sands-17783.herokuapp.com/",
+        "New York Time Scrapper",
         "https://frenzic91.github.io/project-1/",
         "https://cryptic-badlands-31521.herokuapp.com/",
         "https://github.com/volouis/burger",
@@ -24,13 +25,14 @@ var projects = {
         "https://volouis.github.io/bamazon/",
     ],
     img: [
-        "MemoryGame", "TorontoStarSport", "RoundMe", "Budget", "Burger","Crystal", "FriendFinder", "Giphy",
+        "MemoryGame", "TorontoStarSport", 'NYTscrapper', "RoundMe", "Budget", "Burger","Crystal", "FriendFinder", "Giphy",
     "HangMan", "Liri", "node_wordGuess", "Psychic", "StarWars",
     "TrainSchedule", "Trivia", "TwoPlayerRPS", "Bamazon",
 ],
     applications: [
         "Bootstrap, CSS, HTML, JavaScript, React",
         "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js",
+        "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js, React",
         "Ajax, CSS, HTML, Javascript, JQuery",
         "Ajax, CSS, HTML, Javascript, JQuery, MySQL, Node.js",
         "HTML, Javascript, JQuery, MySQL, Node.js",
