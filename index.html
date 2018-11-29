@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
     <body>
@@ -54,7 +55,8 @@
             </div>
     
             <div id="skillSets" class="col-sm-8 huge-side right-side">
-                <div class="subject">
+                
+                <div class="subject ABOUTME">
                     <h2 class="subTitle">About Me</h2>
                     <hr>
                     <p class="description">
@@ -69,202 +71,251 @@
                     </p>
                 </div>
     
-                <div class="subject">
-                    <h2 class="subTitle">Skills</h2>
+                <div class="subject SKILLS">
+                    <h2 class="subTitle">
+                        Skills 
+                        <button class="btn btn-outline-dark float-right" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
+                            </svg>
+                        </button>
+                    </h2>
                     <hr>
-                    <table class="table table-borderless skillTable">
-                        <tbody>
-                            <tr>
-                            <td class="sideSkill">
-                                <div class="skillproper">
-                                    <p class="skillName"><b>HTML/CSS</b></p>
-                                    <p class="percentSkill">95%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-                                <div class="skillproper">
-                                    <p class="skillName"><b>JavaScript</b></p>
-                                    <p class="percentSkill">90%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-            
-                                <div class="skillproper">
-                                    <p class="skillName"><b>SQL</b></p>
-                                    <p class="percentSkill">75%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-            
-                                <div class="skillproper">
-                                    <p class="skillName"><b>NoSQL</b></p>
-                                    <p class="percentSkill">75%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-            
-                                <div class="skillproper">
-                                    <p class="skillName"><b>React</b></p>
-                                    <p class="percentSkill">80%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-            
-                                <div class="skillproper">
-                                    <p class="skillName"><b>Python</b></p>
-                                    <p class="percentSkill">65%</p>
-                                </div>
-                                <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-                            </td>
-                            <td class="sideSkill">
-                                <p class="skillName otherSkills"><b>BootStrap</b></p>
-                                <p class="skillName otherSkills"><b>Node.js</b></p>
-                                <p class="skillName otherSkills"><b>JQuery</b></p>
-                                <p class="skillName otherSkills"><b>Applications</b></p>
-                                <p class="skillName otherSkills"><b>MySQL</b></p>
-                                <p class="skillName otherSkills"><b>MongoDB</b></p>
-                            </td>
-                            </tr>
-                        </tbody>
-                    </table>
-          
+                    <div class="collapse" id="collapse1">
+                        <table class="table table-borderless skillTable">
+                            <tbody>
+                                <tr>
+                                <td class="sideSkill">
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>HTML/CSS</b></p>
+                                        <p class="percentSkill">95%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>JavaScript</b></p>
+                                        <p class="percentSkill">90%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>SQL</b></p>
+                                        <p class="percentSkill">75%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>NoSQL</b></p>
+                                        <p class="percentSkill">75%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>React</b></p>
+                                        <p class="percentSkill">80%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                
+                                    <div class="skillproper">
+                                        <p class="skillName"><b>Python</b></p>
+                                        <p class="percentSkill">65%</p>
+                                    </div>
+                                    <div class="progress" style="max-width: 700px; margin: auto; height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                                </td>
+                                <td class="sideSkill">
+                                    <p class="skillName otherSkills"><b>BootStrap</b></p>
+                                    <p class="skillName otherSkills"><b>Heroku</b></p>
+                                    <p class="skillName otherSkills"><b>Node.js</b></p>
+                                    <p class="skillName otherSkills"><b>JQuery</b></p>
+                                    <p class="skillName otherSkills"><b>Applications</b></p>
+                                    <p class="skillName otherSkills"><b>MySQL</b></p>
+                                    <p class="skillName otherSkills"><b>MongoDB</b></p>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
 
                 </div>
     
-                <div class="subject">
-                    <h2 class="subTitle">Work Experience</h2>
+                <div class="subject WORKEXPERIENCE">
+                    <h2 class="subTitle">
+                        Work Experience
+                        <button class="btn btn-outline-dark float-right" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
+                            </svg>
+                        </button>
+                    </h2>
                     <hr>
-                    <div>
-                        <p><b>Data Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2017 - Mar 2018</span></p>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Utilized a forecasting algorithm to predict future customer demands to reduce cost of inventory 
-                                    using VBA on Microsoft Excel
-                                </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Designed structure databases with MySQL to mitigate large volumes of daily incoming data 
-                                    from clients and employees 
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><b>Developer / BAML</b>  <span class="badge badge-pill badge-dark">Sept 2016 - Apr 2017</span></p>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Organized data and designed an algorithm to forecast future stock prices using Excel
-                                </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Developed a User interface with Python for traders to have better experiences and visualization 
-                                    of stock price data
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><b>Sales Analyst / IBM Canada</b>  <span class="badge badge-pill badge-dark">Sept 2015 - Aug 2016</span></p>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Designed web application demos using IBM’s cloud platform using HTML, CSS, Javascript, JQuery,
-                                    MongoDB and IBM’s API offerings on the cloud
-                                </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Analyzed companies and industries needs and areas of improvement for future growth in an Agile world
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><b>Business Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2014 - Aug 2014</span></p>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Simplified unstructured database to a new concise structure form using Microsoft Excel MySQL
-                                </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p class="description">
-                                    Optimized work flow of employee's work schedule to reduce cost 
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="subject">
-                    <h2 class="subTitle">Education</h2>
-                    <hr>
-                    <p>
-                        <b>Industrial Engineer / University of Toronto</b> 
-                        <span class="badge badge-pill badge-dark">2011 - 2017</span>
-                    </p>
-                    <ul>
-                        <li>
-                            <p class="description">
-                                Programmed efficient algorithm to solve complex mathematical equations using Python and Matlab
-                            </p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="description">
-                                Integration of user experience and interface to design physical and web projects
-                            </p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="description">
-                                Analyzed multiple types of industries and their workflow to optimize transactions between cilents and customers
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="subject">
-                    <h2 class="subTitle">Projects</h2>
-                    <hr>
-    
-                    <div class="projects">
-                        <div class="wrapper">
-                
+                    <div class="collapse" id="collapse2">
+                        <div>
+                            <p><b>Data Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2017 - Mar 2018</span></p>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Utilized a forecasting algorithm to predict future customer demands to reduce cost of inventory 
+                                        using VBA on Microsoft Excel
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Designed structure databases with MySQL to mitigate large volumes of daily incoming data 
+                                        from clients and employees 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><b>Developer / BAML</b>  <span class="badge badge-pill badge-dark">Sept 2016 - Apr 2017</span></p>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Organized data and designed an algorithm to forecast future stock prices using Excel
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Developed a User interface with Python for traders to have better experiences and visualization 
+                                        of stock price data
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><b>Sales Analyst / IBM Canada</b>  <span class="badge badge-pill badge-dark">Sept 2015 - Aug 2016</span></p>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Designed web application demos using IBM’s cloud platform using HTML, CSS, Javascript, JQuery,
+                                        MongoDB and IBM’s API offerings on the cloud
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Analyzed companies and industries needs and areas of improvement for future growth in an Agile world
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><b>Business Analyst / Canada Herb</b>  <span class="badge badge-pill badge-dark">May 2014 - Aug 2014</span></p>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Simplified unstructured database to a new concise structure form using Microsoft Excel MySQL
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p class="description">
+                                        Optimized work flow of employee's work schedule to reduce cost 
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                          <li class="page-item"><button id="previousBtn" class="page-link" data-val=0>Previous</button></li>
-                          <li class="page-item"><button id="nextBtn" class="page-link" data-val=1>Next</button></li>
+                
+                <div class="subject EDUCATION">
+                    <h2 class="subTitle">
+                        Education
+                        <button class="btn btn-outline-dark float-right" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <hr>
+                    <div class="collapse" id="collapse3">
+                        <p>
+                            <b>Full-Stack Developer Certificate / Trilogy</b> 
+                            <span class="badge badge-pill badge-dark">2018 - 2018</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <p class="description">
+                                    Enhancing developing skills to be able to create web applications using React, Javascript, Node.js, SQL ,HTML, CSS and more
+                                </p>
+                            </li>
                         </ul>
-                      </nav>
+
+                        <p>
+                            <b>Industrial Engineer / University of Toronto</b> 
+                            <span class="badge badge-pill badge-dark">2011 - 2017</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <p class="description">
+                                    Programmed efficient algorithm to solve complex mathematical equations using Python and Matlab
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="description">
+                                    Integration of user experience and interface to design physical and web projects
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="description">
+                                    Analyzed multiple types of industries and their workflow to optimize transactions between cilents and customers
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="subject PROJECTS">
+                    <h2 class="subTitle">
+                        Projects
+                        <button class="btn btn-outline-dark float-right" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <hr>
+                    <div class="collapse" id="collapse4">
+                        <div class="projects">
+                            <div class="wrapper">
+                    
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><button id="previousBtn" class="page-link" data-val=0>Previous</button></li>
+                                <li class="page-item"><button id="nextBtn" class="page-link" data-val=1>Next</button></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="app.js"></script>
     </body>
     
