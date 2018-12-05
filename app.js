@@ -7,7 +7,7 @@ var projects = {
     website: [
         "https://volouis.github.io/memoryReact/",
         "https://calm-sands-17783.herokuapp.com/",
-        "New York Time Scrapper",
+        "https://serene-crag-39069.herokuapp.com/",
         "https://frenzic91.github.io/project-1/",
         "https://cryptic-badlands-31521.herokuapp.com/",
         "https://github.com/volouis/burger",
@@ -32,7 +32,7 @@ var projects = {
     applications: [
         "Bootstrap, CSS, HTML, JavaScript, React",
         "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js",
-        "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js, React",
+        "Ajax, Bootstrap, CSS, HTML, Javascript, Mongo, Node.js, React",
         "Ajax, CSS, HTML, Javascript, JQuery",
         "Ajax, CSS, HTML, Javascript, JQuery, MySQL, Node.js",
         "HTML, Javascript, JQuery, MySQL, Node.js",
@@ -55,20 +55,29 @@ var projects = {
 $(document).ready(function(){
     $(".proName").hide();
 
-    $(".projImg").hover(function(){
-        console.log($(this).attr("data-val"));
-        var val = $(this).attr("data-val");
-    
-        $(".pro" + val).fadeTo("slow", .1)
-        $(".name" + val).fadeTo("slow", 1)
-    
-    
-    },function(){
-        $(".proImg").fadeTo("slow", 1)
-        $(".proName").fadeTo("slow", 0)
-    });
-    
+    $("#contacts").hide();
+    $("#resume").hide();
+
 });
+
+$("#socialBtn").click(function(){
+    $("#social").show();
+    $("#resume").hide();
+    $("#contacts").hide();
+})
+
+$("#resumeBtn").click(function(){
+    $("#resume").show();
+    $("#social").hide();
+    $("#contacts").hide();
+})
+
+$("#contactsBtn").click(function(){
+    console.log("here")
+    $("#contacts").show();
+    $("#social").hide();
+    $("#resume").hide();
+})
 
 
 $(".projImg").hover(function(){
@@ -116,9 +125,9 @@ function projectsBtn(bot, top){
 
     for(var i = bot; i < top; i++){
         var btn = $(`<a href=${projects.website[i]}>`)
-        var card = $(`<div class="card">`)
-        var img = $(`<div class="img-container">`)
-        var content = $(`<div class="content">`)
+        var card = $(`<div class="cards">`)
+        var img = $(`<div class="img-containers">`)
+        var content = $(`<div class="contents">`)
         var list = $("<ul>")
         
         var pic = $(`<img>`)
