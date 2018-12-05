@@ -84,3 +84,7 @@ div.resumeInfo{
     float: left;
     width: auto;
 }
+
+.percentSkill{
+    float: 'right'
+}
