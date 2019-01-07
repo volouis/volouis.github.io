@@ -88,3 +88,9 @@ div.resumeInfo{
 .percentSkill{
     float: 'right'
 }
+
+.logo{
+    height: 67px;
+    margin-right: 37px;
+    margin-top: 10px;
+}
