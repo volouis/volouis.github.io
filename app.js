@@ -15,12 +15,12 @@ var projects = {
         "https://floating-lake-72754.herokuapp.com/",
         "https://volouis.github.io/Giphy/",
         "https://volouis.github.io/Word-Guess-Game/",
+        "https://volouis.github.io/liri-node-app/",
         "https://github.com/volouis/node_Word_guess",
         "https://volouis.github.io/Psychic-Game/",
         "https://volouis.github.io/Star-War-RPG-game/",
         "https://volouis.github.io/TrainScheduler/",
         "https://volouis.github.io/TriviaGame/",
-        "https://volouis.github.io/RPSTwoPlayers/",
         "https://volouis.github.io/RPSTwoPlayers/",
         "https://volouis.github.io/bamazon/",
     ],
@@ -28,7 +28,7 @@ var projects = {
         "MemoryGame", "TorontoStarSport", 'NYTscrapper', "RoundMe", "Budget", "Burger","Crystal", "FriendFinder", "Giphy",
     "HangMan", "Liri", "node_wordGuess", "Psychic", "StarWars",
     "TrainSchedule", "Trivia", "TwoPlayerRPS", "Bamazon",
-],
+    ],
     applications: [
         "Bootstrap, CSS, HTML, JavaScript, React",
         "Ajax, Bootstrap, CSS, HTML, Javascript, JQuery, Mongo, Node.js",
@@ -48,6 +48,25 @@ var projects = {
         "Bootstrap, CSS, HTML, Javascript, JQuery",
         "CSS, Firebase, HTML, Javascript, JQuery",
         "Javascript, Node.js",
+    ],
+    code: [
+        "https://github.com/volouis/memoryReact",
+        "https://github.com/volouis/mongoCheerio",
+        "https://github.com/volouis/NYTimesReact",
+        "https://github.com/Frenzic91/project-1",
+        "https://github.com/volouis/burger",
+        "https://github.com/volouis/unit-4-game",
+        "https://github.com/volouis/Friend-Finder",
+        "https://github.com/volouis/Giphy",
+        "https://github.com/volouis/Word-Guess-Game",
+        "https://github.com/volouis/liri-node-app",
+        "https://github.com/volouis/node_Word_guess",
+        "https://github.com/volouis/Psychic-Game",
+        "https://github.com/volouis/Star-War-RPG-game",
+        "https://github.com/volouis/TrainScheduler",
+        "https://github.com/volouis/TriviaGame",
+        "https://github.com/volouis/RPSTwoPlayers",
+        "https://github.com/volouis/bamazon"
     ]
 
 }
@@ -57,6 +76,7 @@ $(document).ready(function(){
 
     $("#contacts").hide();
     $("#resume").hide();
+    $(".loldkm").popover()
 
 });
 
@@ -122,10 +142,12 @@ function projectsBtn(bot, top){
     if(top > projects.name.length){
         top = projects.name.length
     }
+    
+
 
     for(var i = bot; i < top; i++){
-        var btn = $(`<a href=${projects.website[i]}>`)
-        var card = $(`<div class="cards">`)
+
+        var card = $(`<div class="cards loldkm" type="button" data-toggle="popover" data-placement="right" data-html='true' data-content="${popUp(i)}">`)
         var img = $(`<div class="img-containers">`)
         var content = $(`<div class="contents">`)
         var list = $("<ul>")
@@ -143,7 +165,21 @@ function projectsBtn(bot, top){
         card.append(img);
         card.append(content);
     
-        btn.append(card)
-        $(".wrapper").append(btn)
+        $(".wrapper").append(card)
     }
+}
+
+function popUp(num){
+    var info = "something";
+    var appLink = `<a href='${projects.website[num]}' type='button' class='btn btn-primary btn-sm'>App</a>`;
+    var codeLink = `<a href='${projects.code[num]}' type='button' class='btn btn-primary btn-sm'>Code</a>`;
+
+    // var pop = $(`<div>`)
+    // pop.append(appLink)
+    // pop.append(codeLink)
+
+
+
+    return appLink + codeLink;
+    
 }
