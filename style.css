@@ -94,3 +94,17 @@ div.resumeInfo{
     margin-right: 37px;
     margin-top: 10px;
 }
+
+.projectName{
+    text-align: center;
+}
+
+.projectBtn{
+    background-color: #f85858;
+    color: white;
+}
+
+h3.popover-header{
+    background-color: #f85858;
+    color:white;
+}

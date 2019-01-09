@@ -147,7 +147,7 @@ function projectsBtn(bot, top){
 
     for(var i = bot; i < top; i++){
 
-        var card = $(`<div class="cards loldkm" type="button" data-toggle="popover" data-placement="right" data-html='true' data-content="${popUp(i)}">`)
+        var card = $(`<button class="cards loldkm" type="button" data-toggle="popover" data-title="${projects.name[i]}" data-placement="right" data-html='true' data-content="${popUp(i)}">`)
         var img = $(`<div class="img-containers">`)
         var content = $(`<div class="contents">`)
         var list = $("<ul>")
@@ -156,8 +156,8 @@ function projectsBtn(bot, top){
         pic.attr("alt", projects.name[i]);
         pic.attr("src", "img/" + projects.img[i] + ".png");
         
-        list.append("<li><strong>Name:</strong> " + projects.name[i])
-        list.append("<li><strong>Application:</strong> " + projects.applications[i])
+        list.append(`<li class="projectName"><strong>${projects.name[i]}</strong>`)
+        list.append(`<li class="projectName">${projects.applications[i]}`)
         
         content.append(list);
         img.append(pic);
@@ -171,15 +171,18 @@ function projectsBtn(bot, top){
 
 function popUp(num){
     var info = "something";
-    var appLink = `<a href='${projects.website[num]}' type='button' class='btn btn-primary btn-sm'>App</a>`;
-    var codeLink = `<a href='${projects.code[num]}' type='button' class='btn btn-primary btn-sm'>Code</a>`;
+    var appLink =   `<div style='margin: auto; width: 97px;'>
+                        <a href='${projects.website[num]}'>
+                            <button type='button' style='background-color: #f85858; border: 0px' class='btn btn-primary btn-sm projectBtn'>App</button>
+                        </a>
+                        <a href='${projects.code[num]}>
+                            <button type='button' style='background-color: #f85858; border: 0px' class='btn btn-primary btn-sm projectBtn'>Code</button>
+                        </a>
+                    </div>`;
 
-    // var pop = $(`<div>`)
-    // pop.append(appLink)
-    // pop.append(codeLink)
 
 
-
-    return appLink + codeLink;
+    return appLink;
     
 }
+
