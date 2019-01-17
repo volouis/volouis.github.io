@@ -172,6 +172,9 @@ function projectsBtn(bot, top){
 function popUp(num){
     var info = "something";
     var appLink =   `<div style='margin: auto; width: 97px;'>
+                        <p>
+
+                        </p>
                         <a href='${projects.website[num]}'>
                             <button type='button' style='background-color: #f85858; border: 0px' class='btn btn-primary btn-sm projectBtn'>App</button>
                         </a>
@@ -186,3 +189,20 @@ function popUp(num){
     
 }
 
+
+var hare = 5;
+var tortoise = 11;
+var j = 0;
+
+for(j=0;j<20;j++)
+{
+ if(hare < tortoise)
+   hare *= 2;
+ else if(hare == tortoise)
+   break;
+ else
+   tortoise += 1;
+   console.log(hare, tortoise)
+}
+
+console.log(hare+tortoise)
