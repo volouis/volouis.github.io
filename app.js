@@ -178,7 +178,7 @@ function popUp(num){
                         <a href='${projects.website[num]}'>
                             <button type='button' style='background-color: #f85858; border: 0px' class='btn btn-primary btn-sm projectBtn'>App</button>
                         </a>
-                        <a href='${projects.code[num]}>
+                        <a href='${projects.code[num]}'>
                             <button type='button' style='background-color: #f85858; border: 0px' class='btn btn-primary btn-sm projectBtn'>Code</button>
                         </a>
                     </div>`;
@@ -188,4 +188,3 @@ function popUp(num){
     return appLink;
     
 }
-
